@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Thoughts to record and share]]></title>
   <link href="http://franktian.github.io/atom.xml" rel="self"/>
   <link href="http://franktian.github.io/"/>
-  <updated>2014-11-20T22:46:45-05:00</updated>
+  <updated>2014-11-20T22:56:55-05:00</updated>
   <id>http://franktian.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Frank Tian]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
