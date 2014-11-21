@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://franktian.github.io/atom.xml" rel="self"/>
   <link href="http://franktian.github.io/"/>
-  <updated>2014-11-04T21:42:47-05:00</updated>
+  <updated>2014-11-20T22:35:55-05:00</updated>
   <id>http://franktian.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Frank First Post]]></title>
+    <title type="html"><![CDATA[How I Setup My First Octopress Blog and Create My First Post]]></title>
     <link href="http://franktian.github.io/blog/2014/11/04/frank-first-post/"/>
     <updated>2014-11-04T21:38:01-05:00</updated>
     <id>http://franktian.github.io/blog/2014/11/04/frank-first-post</id>
