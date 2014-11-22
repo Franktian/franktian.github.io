@@ -4,7 +4,7 @@
   <title><![CDATA[Thoughts to record and share]]></title>
   <link href="http://franktian.github.io/atom.xml" rel="self"/>
   <link href="http://franktian.github.io/"/>
-  <updated>2014-11-21T23:04:43-05:00</updated>
+  <updated>2014-11-21T23:20:04-05:00</updated>
   <id>http://franktian.github.io/</id>
   <author>
     <name><![CDATA[Frank Tian]]></name>
@@ -51,6 +51,32 @@
 
 
 <p>I am not quite sure about what sudo means, but right now, to me, it&rsquo;s just like providing administrative access, and solves my access denied error.</p>
+
+<p>After setting up all the requirements, the deployment process went pretty easy. I was deploying to <a href="https://help.github.com/articles/user-organization-and-project-pages/">Git pages</a>. If this is the first time you are using git hosting service, you might need to wait for a few minutes for your blog to be available on Github&rsquo;s server.</p>
+
+<p>And, if you type in:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You should be able to view your blog at &lsquo;localhost:4000&rsquo;</p>
+
+<p>Finally, I found it quite convenient to keep running</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake watch</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>on two separate terminal windows while I am editing the source of this post. I could directly see the changes after saving and refreshing the browser.</p>
+
+<p>Furthermore, take a look at <a href="http://livereload.com/">LiveReload</a> if you got an extra monitor and would like to enjoy some cool stuff done by the real geeks.</p>
 ]]></content>
   </entry>
   
