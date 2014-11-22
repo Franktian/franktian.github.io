@@ -9,8 +9,7 @@
   <meta name="author" content="Frank Tian">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="After playing around with Octopress' official documentation. I finally got this blog setup and found this Octopress blogging tool is so awesome that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -85,7 +84,39 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><p>After playing around with Octopress&#8217; <a href="http://octopress.org/docs/setup/">official documentation</a>. I finally got this blog setup and found this Octopress blogging tool is so awesome that fits all needs for a lazy developer like me. It gives me full control of all the source files in such an easy way(unlike Wordpress). And the deployment process is ridiculously easy:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So if you would like to find an easy-to-use blogging system and you have some basic familarities with unix command line, Octopress is highly recommended.</p>
+
+<p>Octopress&#8217; official guideline is definitely quite helpful. However I still got some problems that&rsquo;s not covered from their doc while I was going through.</p>
+
+<p>I am on OSX terminal, after cloning the repo and typing in the following command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I got the following error</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ERROR:  While executing gem ... (Gem::FilePermissionError)
+</span><span class='line'>    You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So I saw a <a href="http://stackoverflow.com/questions/14607193/installing-gem-or-updating-rubygems-fails-with-permissions-error">stackoverflow question</a> that solves this problem. The answer recommended a way to install tool that controls the ruby version. I spent like an hour but did not get my problem solved. And it was actually one of the comment under the question that solved my problem:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install bundler</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I am not quite sure about what sudo means, but right now, to me, it&rsquo;s just like providing administrative access, and solves my access denied error.</p>
 </div>
 
 
