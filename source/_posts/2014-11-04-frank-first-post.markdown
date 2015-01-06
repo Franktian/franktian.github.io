@@ -37,16 +37,7 @@ And, if you type in:
 ```
 rake preview
 ```
-You should be able to view your blog at 'localhost:4000'
+You should be able to view your blog at `localhost:4000`
 
-Finally, I found it quite convenient to keep running
-```
-rake watch
-```
-and
-```
-rake preview
-```
-on two separate terminal windows while I am editing the source of this post. I could directly see the changes after saving and refreshing the browser.
 
 Furthermore, take a look at [LiveReload](http://livereload.com/) if you got an extra monitor and would like to enjoy some cool stuff done by the real geeks.
