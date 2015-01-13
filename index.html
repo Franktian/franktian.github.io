@@ -9,7 +9,7 @@
   <meta name="author" content="Frank Tian">
 
   
-  <meta name="description" content="Today I&rsquo;ve been trying to re-write a multi-level vertical navigation menu like this one. My goal is to make a set of vertical bars whose &hellip;">
+  <meta name="description" content="position Property As the name of this property, position specify the behavior of how to locate the element on the document. There are six different &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,103 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/01/12/css-diary-day-one/">CSS Diary Day One - Overview of Basic CSS Layout</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-01-12T19:14:35-05:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>7:14 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2><code>position</code> Property</h2>
+
+<p>As the name of this property, <code>position</code> specify the behavior of how to locate the element on the document. There are six different values you can assign to position:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>position: static|absolute|fixed|relative|initial|inherit;</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Static</h3>
+
+<p><code>static</code> is the default value of position. Any element has a position value of <code>static</code> is considered as <em>unpositioned</em>. In this situation property like <code>top</code>or <code>float</code> will be automatically ignored.</p>
+
+<p>Any element has a position value other than <code>static</code> will be considered as <em>positioned</em></p>
+
+<h3>Absolute</h3>
+
+<p>An absolutely positioned element is placed relative to it&rsquo;s closest positioned ancestor, which is the closest parent element whose position value is not <code>staic</code>. If there is no such an element found. Then it will be relative to <code>&lt;body&gt;</code>.</p>
+
+<h3>Relative</h3>
+
+<p>The element is positioned relative to its <em>normal</em> position. For example, a relatively positioned element with <code>left: 20px;</code> will be added 20 pixels to its left.</p>
+
+<p>If you do not specify any of <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code> or <code>float</code> property, <code>relative</code> behaves like <code>static</code> but the element is still considered as <code>positioned</code>.</p>
+
+<p>It is a common trick to use relatively positioned container element with absolutely positioned child elements to layout a page.</p>
+
+<h2><code>display</code> Property - <code>block</code> and <code>inline</code></h2>
+
+<p>The difference between these two is <code>block</code> will take as much horizontal space as possible and have a new line before and after it, while <code>inline</code> will only take the space it need and not have new lines.</p>
+
+<h2>Other tips</h2>
+
+<p>Remove underline of a hyperlink:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="c">/* Applys to all descent li&#39;s */</span>
+</span><span class='line'><span class="nt">li</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">/* Applys to only successor li&#39;s */</span>
+</span><span class='line'><span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Further Reading</h2>
+
+<p><a href="http://css-tricks.com/almanac/properties/d/display/">display|CSS-Tricks</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -378,6 +475,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/01/12/css-diary-day-one/">CSS Diary Day One - Overview of Basic CSS Layout</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2015/01/05/avoid-duplicate-css-code-with-multiple-classes/">Avoid Duplicate CSS Code With Multiple Classes</a>
